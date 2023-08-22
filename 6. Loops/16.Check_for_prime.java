@@ -12,7 +12,7 @@ class Check_for_prime {
             }
         }
 
-        if (num > 0 && flag) {
+        if (num > 1 && flag) {
             System.out.println("The number is prime");
         } else {
             System.out.println("The number is not a prime number");
