@@ -3,19 +3,25 @@ package Loops;
 import java.util.Scanner;
 
 public class GCDofTwoNumbers {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int first = sc.nextInt();
-        int second = sc.nextInt();
+
+    static int gcd(int first, int second) {
         int ans = 0;
 
-        for (int i = 1; i < Math.min(first, second); i++) {
+        for (int i = 1; i <= Math.min(first, second); i++) {
             if (first % i == 0 && second % i == 0) {
                 ans = i;
             }
         }
 
-        System.out.println("GCD of " + first + " and " + second + " is: " + ans);
+        return ans;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int first = sc.nextInt();
+        int second = sc.nextInt();
+
+        System.out.println("GCD of " + first + " and " + second + " is: " + gcd(first, second));
 
     }
 }
