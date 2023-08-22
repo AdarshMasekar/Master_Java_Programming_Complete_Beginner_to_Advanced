@@ -28,6 +28,8 @@
 
 **14. LCM of 2 numbers**
 
-**15. Check for Prime**
+**15 . All Divisors of a Number**
 
-**16. Fibonacci Number**
+**16. Check for Prime**
+
+**17. Fibonacci Number**
