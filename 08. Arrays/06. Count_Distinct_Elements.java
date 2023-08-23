@@ -70,3 +70,9 @@ public class Count_Distinct_Elements {
         System.out.println("hashmap ans : " + countDistinctUsingHashMap(a)); // Output using HashMap approach
     }
 }
+
+// output :
+// normal ans : 5
+// DoubleLoop ans : 5
+// hashset ans : 5
+// hashmap ans : 5
