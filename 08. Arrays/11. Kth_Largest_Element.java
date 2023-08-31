@@ -28,12 +28,40 @@ public class Kth_Largest_Element {
         return pq.peek();
     }
 
+    public static int findKthLargestInBigOfN(int[] nums, int k) {
+        int n = nums.length, min = Integer.MAX_VALUE, max = Integer.MIN_VALUE;
+        for (int i = 0; i < n; i++) {
+            if (nums[i] > max) {
+                max = nums[i];
+            }
+            if (nums[i] < min) {
+                min = nums[i];
+            }
+
+            int arr[] = new int[max - min + 1];
+
+            for (int a = 0; a < n; a++) {
+                arr[a - min]++;
+            }
+
+            for (int j = arr.length - 1; j >= 0; j--) {
+                k -= arr[j];
+                if (k <= 0) {
+                    return j;
+                }
+            }
+        }
+        return 0;
+    }
+
     public static void main(String[] args) {
         int[] arr = { 3, 2, 1, 5, 6, 6 };
         int k = 2;
 
         // Find and print the kth largest element
         System.out.println("Kth largest element is: " + findKthLargest(arr, k));
+        System.out.println("Kth largest element is: " + findKthLargestInBigOfN(arr, k));
+
     }
 }
 
