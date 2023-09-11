@@ -53,5 +53,5 @@ public class Longest_Nice_String {
         System.out.println(longestNiceSubstring("YazaAay"));
         System.out.println(longestNiceSubstring("Bb"));
         System.out.println(longestNiceSubstring("c"));
-    }
+    } 
 }
