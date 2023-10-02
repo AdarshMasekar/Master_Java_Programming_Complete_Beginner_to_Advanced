@@ -59,5 +59,16 @@ class Methods_of_List {
         ListIterator<Integer> it5 = list.listIterator(3); // Start at index 3
         System.out.println("next index of it5 is: " + it5.nextIndex()); // next index of it5 is: 3
         System.out.println("previous index of it5 is: " + it5.previousIndex()); // previous index of it5 is: 2
+
+        // Using remove method to remove elements greater than 50
+        ListIterator<Integer> it6 = list.listIterator();
+        while (it6.hasNext()) {
+            int num = (Integer) it6.next();
+            // If the current element is greater than 50, remove it from the list
+            if (num > 50) {
+                it6.remove();
+            }
+        }
+        System.out.println(list); // [5, 20, 5, 40, 5, 5, 5]
     }
 }
