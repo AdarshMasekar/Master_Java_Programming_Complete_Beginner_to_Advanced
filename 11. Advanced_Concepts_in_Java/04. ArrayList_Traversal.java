@@ -1,5 +1,3 @@
-package ArrayList;
-
 import java.util.ArrayList;
 
 public class ArrayList_Traversal {
@@ -51,22 +49,23 @@ public class ArrayList_Traversal {
         al.add("pandari");
 
         System.out.println("Printed using for loop and get() method:");
-        usingForLoop(al);
+        usingForLoop(al); // Calls the method to traverse using for loop
         System.out.println("\n");
 
         System.out.println("Printed using enhanced for-each loop:");
-        usingForEachLoop(al);
+        usingForEachLoop(al); // Calls the method to traverse using enhanced for-each loop
         System.out.println("\n");
 
         System.out.println("Printed using Iterator:");
-        usingIterator(al);
+        usingIterator(al); // Calls the method to traverse using Iterator
         System.out.println("\n");
 
         System.out.println("Printed using forEach method:");
-        usingForEachMethod(al);
+        usingForEachMethod(al); // Calls the method to traverse using forEach method
         System.out.println("\n");
     }
 }
+
 
 // output:
 
