@@ -6,6 +6,7 @@ public class InsertAtBeginning extends CustomLinkedList {
         Node newest = new Node(data);
         newest.next = head;
         head = newest;
+        size++;
     }
 
     public static void main(String[] args) {
